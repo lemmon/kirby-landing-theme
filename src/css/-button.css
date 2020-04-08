@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  position: relative;
+  appearance: none;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: currentColor;
+  box-shadow: none;
+  outline: 0;
+  overflow: hidden;
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.button__label {
+  display: block;
+  position: relative;
+  z-index: 1;
+}

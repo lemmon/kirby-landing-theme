@@ -1,0 +1,24 @@
+{% extends layout() %}
+
+{% block title %}
+{% if site.tagline.notEmpty %}{{ site.title }} &ndash; {{ site.tagline }}{% else %}{{ parent() }}{% endif %}
+{% endblock %}
+
+{% block header %}
+{% with { hero: page.children().template('hero-content').first } %}
+<div class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__content col max80 mx">
+
+    <div>
+      {{ parent() }}
+    </div>
+    {% include partial('hero-content') %}
+
+  </div>
+</div>
+{% endwith %}
+{% endblock %}
+
+{% block main %}
+{% endblock %}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}{{ page.title }} &ndash; {{ site.title }}{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="{{ kirby.url }}/static/master.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/brands.css">
+</head>
+<body class="col">
+
+  <header class="header">
+    {% block header %}
+    <div class="max80 mx">
+      <div class="py1 sd-p1 sd-row ld-row justify-between items-center flex-wrap">
+        <div class="order0 row justify-between span1 span-auto">
+          <h1><a class="block p1 fw900" style="font-size: 1.75rem;" href="{{ page('home').url }}">
+            {{- site.title -}}
+          </a></h1>
+        </div>
+        <nav class="order1 span1 span-auto hide sd-show">
+          <ul class="px025 row justify-end ac">
+            {% for item in site.social.toStructure %}
+            <li><a
+              class="block p05"
+              title="{{ item.name }}"
+              href="{{ item.url }}"
+            ><span class="h3 fab block p025" aria-hidden="true">&#x{{ item.code }};</span><span class="hide">{{ item.name }}</span></a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+    {% endblock %}
+  </header>
+
+  <main class="span1">
+    {% block main none %}
+  </main>
+
+  {% if site.footer.notEmpty %}
+  <footer class="bg-black-90 color-white">
+    <div class="wrap py2">
+      <div class="py1 sd-p1">
+
+        <div class="p1 copy ac">
+          {{ site.footer | kt }}
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  {% endif %}
+
+</body>
+</html>

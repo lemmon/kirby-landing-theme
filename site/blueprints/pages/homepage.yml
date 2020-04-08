@@ -1,0 +1,19 @@
+title: Homepage
+
+options:
+  changeStatus: false
+  duplicate: false
+
+icon: text
+
+sections:
+
+  header:
+    headline: Header
+    type: pages
+    templates:
+      - hero-content
+    image: false
+    info: "{{ page.intendedTemplate }}"
+    create: false
+    sortable: false

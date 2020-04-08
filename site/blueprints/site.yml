@@ -1,0 +1,84 @@
+title: Site
+
+tabs:
+
+  content:
+    label: Content
+    icon: text
+    sections:
+
+      landing:
+        headline: Frontpage
+        type: pages
+        templates:
+          - homepage
+        image: false
+        create: false
+
+      modules:
+        headline: Modules
+        type: pages
+        templates:
+          - posts
+        image: false
+        create: false
+        empty: No modules installed
+
+  settings:
+    label: Settings
+    icon: cog
+    columns:
+
+      - width: 3/4
+        sections:
+
+          fields:
+            type: fields
+            fields:
+
+              tagline:
+                label: Tagline
+                type: text
+                help: >
+                  Tagline will be displayed in title tag next to your site name.
+                  (e.g. {{ site.title }} - Your Custom Tagline)
+
+              social:
+                label: Social
+                type: structure
+                fields:
+                  name:
+                    label: Name
+                    type: text
+                  code:
+                    label: Code
+                    type: text
+                    help: Font Awesome Unicode code.
+                  url:
+                    label: Url
+                    type: url
+
+              footer:
+                label: Footer
+                type: textarea
+                buttons: false
+                help: >
+                  This theme is completely free for both personal and commercial use,
+                  however any kind of attribution is appreciated.
+
+      - width: 1/4
+        sections:
+
+          favicon:
+            type: files
+            template: favicon
+            empty: No favicon uploaded
+            max: 1
+            sortable: false
+            layout: cards
+            size: tiny
+            info: "{{ file.width }} x {{ file.height }} ({{ file.mime }})"
+            image:
+              ratio: 1/1
+              cover: true
+            width: 1/2

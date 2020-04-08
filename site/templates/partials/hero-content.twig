@@ -1,0 +1,43 @@
+<div class="span1 md-py2 col justify-center">
+  <div class="pb2">
+    <div class="max70 mx py1 sd-px1 md-py2 col ld-py4 ld-row justify-between items-center">
+
+      {% if hero.headline.notEmpty
+        or hero.text.notEmpty
+        or hero.actions.notEmpty
+      %}
+      <div class="span1 max32 py1 md-py2">
+        {% if hero.headline.notEmpty %}
+        <h1 class="p1 h2 sd-h1 lh1 fw800">{{ hero.headline }}</h1>
+        {% endif %}
+        {% if hero.text.notEmpty %}
+        <h2 class="p1 h6 sd-h4 lh4 o80">{{ hero.text }}</h2>
+        {% endif %}
+        {% if hero.actions.notEmpty %}
+        <div class="row p05">
+          {% for action in hero.actions.toStructure %}
+          <div class="p05"><a class="button min12 ac p1" href="{{ page(action.link).url ?: action.link.value }}">
+            <span class="button__label px05 fw500 lh4 color-yellow uc">{{ action.label }}</span>
+          </a></div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if hero.figure.notEmpty %}
+      <div class="span1 max32 py1 md-py2">
+        <div class="p1">
+          <figure>
+            <img
+              class="block wmax ha mx"
+              src="{{ hero.figure.toFile.url }}"
+            >
+          </figure>
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+</div>
