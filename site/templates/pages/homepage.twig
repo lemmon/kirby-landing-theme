@@ -21,4 +21,15 @@
 {% endblock %}
 
 {% block main %}
+<div class="py2 md-py4">
+
+  {% for section in page.children().notTemplate('hero-content') %}
+  <div class="py1 md-py2">
+
+    {% include partial(section.intendedTemplate) %}
+
+  </div>
+  {% endfor %}
+
+</div>
 {% endblock %}

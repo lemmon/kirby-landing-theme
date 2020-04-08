@@ -1,0 +1,38 @@
+{% with {
+  ta: section.textAlign.value,
+  ts: section.textSize.value,
+  fp: section.figurePosition.value,
+} %}
+<section>
+  <div class="max80 mx py1 sd-px1 col items-center
+    {%- if ta == 'right' %} ar{% elseif ta == 'center' %} ac{% endif -%}
+    {%- if fp == 'left' %} ld-row{% elseif fp == 'right' %} ld-row-reverse{% endif -%}
+  ">
+
+    {% if section.figure.notEmpty %}
+    <div class="span1">
+      <figure class="max42 mx p1">
+        <img
+          class="block wmax ha mx"
+          src="{{ section.figure.toFile.url }}"
+        >
+      </figure>
+    </div>
+    {% endif %}
+
+    <div class="span1">
+      <div class="max42 mx">
+        {% if section.headline.notEmpty %}
+        <div class="p1">
+          <h1 class="h2 sd-h1 lh1 fw800">{{ section.headline }}</h1>
+        </div>
+        {% endif %}
+        <div class="p1 copy {%- if ts == 'bigger' %} h5{% endif %} lh4">
+          {{ section.text.kt({ width: 640, srcset: [ 320, 640, 960, 1280 ] }) | raw }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endwith %}

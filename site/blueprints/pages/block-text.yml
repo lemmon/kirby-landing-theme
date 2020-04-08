@@ -1,0 +1,64 @@
+title: Text Block
+
+columns:
+
+  - width: 2/4
+    sections:
+
+      content:
+        type: fields
+        fields:
+
+          headline:
+            label: Headline
+            type: textarea
+            buttons: false
+
+          text:
+            label: Content
+            type: textarea
+
+  - width: 1/4
+    sticky: true
+    sections:
+
+      files:
+        headline: Files
+        type: files
+        sortable: false
+
+  - width: 1/4
+    sticky: true
+    fields:
+
+      textAlign:
+        label: Text Align
+        type: select
+        placeholder: left
+        options:
+          - center
+          - right
+        width: 1/2
+
+      textSize:
+        label: Text Size
+        type: select
+        placeholder: normal
+        options:
+          - bigger
+        width: 1/2
+
+      figure:
+        label: Figure Image
+        type: files
+        max: 1
+        image:
+          cover: false
+
+      figurePosition:
+        label: Image Position
+        type: select
+        options:
+          - left
+          - right
+        width: 1/2

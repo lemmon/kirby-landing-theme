@@ -17,3 +17,12 @@ sections:
     info: "{{ page.intendedTemplate }}"
     create: false
     sortable: false
+
+  content:
+    headline: Main Content
+    type: pages
+    templates:
+      - block-text
+    image: false
+    info: "{{ page.intendedTemplate }}"
+    sortable: false

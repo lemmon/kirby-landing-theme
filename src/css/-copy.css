@@ -1,21 +1,24 @@
 .copy {
-  line-height: 1.5;
   & > * + * {
     margin-top: 1.5em;
   }
   & h1 {
-    font-weight: 800;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 2.0em;
+    line-height: 1.25;
   }
   & h2 {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 1.5em;
+    line-height: 1.25;
   }
   & h3 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.25em;
+    line-height: 1.25;
   }
+  & h4 {
+    font-size: 1.125em;
+    line-height: 1.25;
+  }
+  & h1,
   & h2,
   & h3,
   & h4,
@@ -52,15 +55,14 @@
       padding-right: .5em;
       margin-left: -2em;
       text-align: right;
-      opacity: .2;
+      opacity: .3;
     }
   }
   & ol {
     counter-reset: ol;
     & li::before {
       counter-increment: ol;
-      content: counter(ol);
-      font-variant-numeric: tabular-nums;
+      content: counter(ol, upper-roman);
     }
   }
   & ul {
@@ -84,18 +86,54 @@
       opacity: .1;
     }
   }
-  & pre {
-    white-space: pre-wrap;
-  }
+  & pre,
   & code {
     font-family: Courier, monospace;
     font-size: 14px;
     line-height: 20px;
+  }
+  & code {
+    display: inline-block;
+    padding: 0 4px;
+    background-color: var(--black-05);
+  }
+  & pre {
+    white-space: pre-wrap;
+    background-color: var(--black-05);
+    & code {
+      display: block;
+      padding: 16px 18px;
+      background-color: transparent;
+    }
+  }
+  & p code {
+    position: relative;
+    top: -2px;
   }
   & dt {
     opacity: .5;
   }
   & dd + dt {
     margin-top: .5em;
+  }
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  &::before {
+    content: "";
+    display: block;
+    padding-top: calc(100% * 720 / 1280);
+  }
+  & iframe {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
   }
 }
