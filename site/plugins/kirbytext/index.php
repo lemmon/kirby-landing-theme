@@ -2,11 +2,11 @@
 
 Kirby::plugin('lemmon/kirbytext', [
   'fieldMethods' => [
-    'kt' => function (Kirby\Cms\Field $field, $args) {
+    'kt' => function (Kirby\Cms\Field $field, array $args = null) {
       return kirbytext($field->value, array_merge([
         'parent' => $field->parent(),
         'field'  => $field,
-      ], $args));
+      ], $args ?? []));
     },
   ],
   'tags' => [
