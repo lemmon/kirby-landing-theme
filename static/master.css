@@ -208,8 +208,21 @@ svg {
   z-index: 1;
 }
 
-.copy > * + * {
+.copy > *:first-child {
+  margin-top: 0;
+}
+
+.copy > *:last-child {
+  margin-bottom: 0;
+}
+
+.copy > *:not(p) {
   margin-top: 1.5em;
+}
+
+.copy > p {
+  margin-top: .5em;
+  margin-bottom: 1.5em;
 }
 
 .copy h1 {
