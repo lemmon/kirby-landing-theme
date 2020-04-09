@@ -15,7 +15,7 @@ columns:
             buttons: false
 
           text:
-            label: Content
+            label: Text
             type: textarea
 
   - width: 1/4
@@ -38,7 +38,6 @@ columns:
         options:
           - center
           - right
-        width: 1/2
 
       textSize:
         label: Text Size
@@ -46,7 +45,6 @@ columns:
         placeholder: normal
         options:
           - bigger
-        width: 1/2
 
       figure:
         label: Figure Image
@@ -61,4 +59,3 @@ columns:
         options:
           - left
           - right
-        width: 1/2
