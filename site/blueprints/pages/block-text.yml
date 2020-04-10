@@ -2,7 +2,7 @@ title: Text Block
 
 columns:
 
-  - width: 2/4
+  - width: 1/2
     sections:
 
       content:
@@ -14,48 +14,69 @@ columns:
             type: textarea
             buttons: false
 
+          subheadline:
+            label: SubHeadline
+            type: textarea
+            buttons: false
+
           text:
             label: Text
             type: textarea
 
-  - width: 1/4
+  - width: 1/2
     sticky: true
     sections:
+
+      sidebar:
+        type: fields
+        fields:
+
+          textAlign:
+            label: Text Align
+            type: select
+            placeholder: left
+            options:
+              - center
+              - right
+            width: 1/2
+
+          textSize:
+            label: Text Size
+            type: select
+            placeholder: normal
+            options:
+              - bigger
+            width: 1/2
+
+          figure:
+            label: Figure Image
+            type: files
+            max: 1
+            image:
+              cover: false
+
+          figureCaption:
+            label: Image Caption
+            type: textarea
+            buttons: false
+
+          figureSize:
+            label: Image Size
+            type: select
+            placeholder: normal
+            options:
+              - bigger
+            width: 1/2
+
+          figurePosition:
+            label: Image Position
+            type: select
+            options:
+              - left
+              - right
+            width: 1/2
 
       files:
         headline: Files
         type: files
         sortable: false
-
-  - width: 1/4
-    sticky: true
-    fields:
-
-      textAlign:
-        label: Text Align
-        type: select
-        placeholder: left
-        options:
-          - center
-          - right
-
-      textSize:
-        label: Text Size
-        type: select
-        placeholder: normal
-        options:
-          - bigger
-
-      figure:
-        label: Figure Image
-        type: files
-        max: 1
-        image:
-          cover: false
-
-      figurePosition:
-        label: Image Position
-        type: select
-        options:
-          - left
-          - right

@@ -1,0 +1,24 @@
+.min8  { min-width:  8rem; }
+.min10 { min-width: 10rem; }
+.min12 { min-width: 12rem; }
+.min14 { min-width: 14rem; }
+.min16 { min-width: 16rem; }
+.min18 { min-width: 18rem; }
+.min20 { min-width: 20rem; }
+.min24 { min-width: 24rem; }
+
+.max32 { max-width: 32rem; }
+.max34 { max-width: 34rem; }
+.max42 { max-width: 42rem; }
+.max52 { max-width: 52rem; }
+.wmax  { max-width: 100%; }
+
+@media (--view-xl) {
+
+  .xl-row { display: flex; flex-direction: row; }
+  .xl-col { display: flex; flex-direction: column; }
+
+  .xl-row-reverse { display: flex; flex-direction: row-reverse; }
+  .xl-col-reverse { display: flex; flex-direction: column-reverse; }
+
+}

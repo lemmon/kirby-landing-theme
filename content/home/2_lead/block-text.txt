@@ -6,6 +6,10 @@ Headline:
 
 ----
 
+Subheadline: 
+
+----
+
 Text:
 
 # Nullam Hendrerit Neque
@@ -23,6 +27,10 @@ Textsize: bigger
 ----
 
 Figure: 
+
+----
+
+Figuresize: 
 
 ----
 

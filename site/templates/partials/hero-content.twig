@@ -7,11 +7,17 @@
         or hero.actions.notEmpty
       %}
       <div class="span1 max32 py1 md-py2">
-        {% if hero.headline.notEmpty %}
-        <h1 class="p1 h2 sd-h1 lh1 fw800">{{ hero.headline }}</h1>
-        {% endif %}
-        {% if hero.text.notEmpty %}
-        <h2 class="p1 h6 sd-h4 lh4 o80">{{ hero.text }}</h2>
+        {% if hero.headline.notEmpty
+          or hero.text.notEmpty
+        %}
+        <div class="px1 py05">
+          {% if hero.headline.notEmpty %}
+          <h1 class="py05 h2 sd-h1 lh1 fw800">{{ hero.headline }}</h1>
+          {% endif %}
+          {% if hero.text.notEmpty %}
+          <h2 class="py05 h6 sd-h4 lh4 o80">{{ hero.text }}</h2>
+          {% endif %}
+        </div>
         {% endif %}
         {% if hero.actions.notEmpty %}
         <div class="row p05">
@@ -32,6 +38,7 @@
             <img
               class="block wmax ha mx"
               src="{{ hero.figure.toFile.url }}"
+              alt=""
             >
           </figure>
         </div>

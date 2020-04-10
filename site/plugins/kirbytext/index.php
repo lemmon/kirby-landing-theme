@@ -38,7 +38,7 @@ Kirby::plugin('lemmon/kirbytext', [
           Html::img($file->url(), [
             'width'  => $file->width(),
             'height' => $file->height(),
-            'alt'    => $alt ?? ' ',
+            'alt'    => $alt ?: ' ',
             'title'  => $title,
             'srcset' => $srcset ?? null,
           ]),

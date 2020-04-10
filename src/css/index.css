@@ -16,13 +16,13 @@
 
 @import 'abrusco/src/-debug';
 
+@import '-grid';
+
 @import '-header';
 
-/* addons */
+/* components */
 
-.min10 { min-width: 10rem; }
-.min12 { min-width: 12rem; }
-
-.max42 { max-width: 42rem; }
-.max44 { max-width: 44rem; }
-.wmax  { max-width: 100%; }
+.x-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
