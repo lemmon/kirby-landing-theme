@@ -15,18 +15,18 @@
 
     {% if fp %}
     <div class="span{% if fs == 'bigger' %}2 max52{% else %}span1 max34{% endif %}">
-      <div class="ld-p1 copy lh4">
+      <div class="p1 ld-p2 copy lh4">
         {{ "(image: %s caption: %s)"
           | format(section.figure.toFile.filename, section.figureCaption.value)
           | kt({
               parent: section.figure.parent,
               field: section.figure,
             } | merge(fs == 'bigger' ? {
-              width: 800,
-              srcset: [ 400, 800, 1600 ],
+              width: 768,
+              srcset: [ 480, 768, 960, 1280 ],
             } : {
-              width: 512,
-              srcset: [ 512, 1024 ],
+              width: 480,
+              srcset: [ 480, 960 ],
             }))
         }}
       </div>
