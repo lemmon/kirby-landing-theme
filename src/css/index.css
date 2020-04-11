@@ -20,6 +20,18 @@
 
 @import '-header';
 
+/* Inter font-family */
+
+:root {
+  --font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    --font-family: 'Inter var', sans-serif;
+  }
+}
+
 /* components */
 
 .x-grid {
