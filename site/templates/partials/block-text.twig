@@ -48,9 +48,11 @@
         {% endif %}
       </div>
       {% endif %}
+      {% if section.text.notEmpty %}
       <div class="p1 copy {%- if ts == 'bigger' %} sd-h5{% endif %} lh4">
         {{ section.text.kt({ width: 640, srcset: [ 320, 640, 960, 1280 ] }) | raw }}
       </div>
+      {% endif %}
     </div>
 
   </div>
