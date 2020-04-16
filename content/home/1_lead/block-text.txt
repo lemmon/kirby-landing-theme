@@ -2,11 +2,11 @@ Title: Lead
 
 ----
 
-Headline: 
+Headline:
 
 ----
 
-Subheadline: 
+Subheadline:
 
 ----
 
@@ -18,6 +18,10 @@ Vivamus cursus imperdiet pulvinar. Donec dictum libero tortor, a consectetur nis
 
 ----
 
+Actions:
+
+----
+
 Textalign: center
 
 ----
@@ -26,11 +30,15 @@ Textsize: bigger
 
 ----
 
-Figure: 
+Figure:
 
 ----
 
-Figuresize: 
+Figurecaption:
+
+----
+
+Figuresize:
 
 ----
 

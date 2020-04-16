@@ -5,7 +5,7 @@
   fs: section.figure.notEmpty ? section.figureSize.value : null,
   fig: section.figure.notEmpty ? section.figure.toFile : null,
 } %}
-<section>
+<section class="py1 md-py2">
   <div class="py1 sd-px1 max{% if fs == 'bigger' %}80{% else %}70{% endif %} mx col items-center
     {{- ta == 'right' ? ' ar' : ta == 'center' ? ' ac' : ' al' }}
     {%- if fp %} justify-between

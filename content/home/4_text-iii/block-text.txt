@@ -10,7 +10,7 @@ Subheadline: Sollicitudin quam auctor, mattis purus, suspendisse mattis sollicit
 
 ----
 
-Text: Nullam hendrerit neque sit amet velit rhoncus tempus. Nunc sagittis eu enim a fringilla. Etiam ullamcorper, purus at pellentesque fermentum, ex magna iaculis ex, at mollis erat nunc at elit. Sed scelerisque nulla nec nisl molestie consequat.
+Text: Nullam hendrerit neque sit amet velit rhoncus tempus. Nunc sagittis eu enim a fringilla. Etiam ullamcorper, purus at pellentesque fermentum, ex magna iaculis ex, at mollis erat nunc at elit. Image credit: https://unsplash.com/photos/8XyXR2jhFJg
 
 ----
 
@@ -28,7 +28,7 @@ Figure:
 
 ----
 
-Figurecaption: Credit: https://unsplash.com/photos/8XyXR2jhFJg
+Figurecaption: 
 
 ----
 

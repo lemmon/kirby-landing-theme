@@ -1,0 +1,7 @@
+headline: Sections
+type: pages
+templates:
+  - block-text
+  - block-features
+image: false
+info: "{{ page.intendedTemplate }}"

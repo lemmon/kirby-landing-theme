@@ -1,0 +1,50 @@
+Title: Text + Image
+
+----
+
+Headline: Donec Dictum Libero Tortor, a Consectetur
+
+----
+
+Subheadline: Sollicitudin quam auctor, mattis purus, suspendisse mattis sollicitudin eros, euismod ultricies lorem, in eu lacinia erat maecenas efficitur
+
+----
+
+Text: 
+
+----
+
+Actions:
+
+- 
+  label: Sign up
+  link: bar
+- 
+  label: Learn More
+  link: foo
+
+----
+
+Textalign: 
+
+----
+
+Textsize: 
+
+----
+
+Figure:
+
+- undraw_preparation_rrih.svg
+
+----
+
+Figurecaption: 
+
+----
+
+Figuresize: 
+
+----
+
+Figureposition: right

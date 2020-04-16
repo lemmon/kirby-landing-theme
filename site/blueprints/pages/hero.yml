@@ -1,7 +1,9 @@
-title: Homepage
+title: Hero
 
 options:
+  changeSlug: false
   changeStatus: false
+  delete: false
   duplicate: false
 
 icon: text
@@ -11,7 +13,3 @@ sections:
   hero:
     extends: sections/blocks
     headline: Hero
-    parent: page.find('hero')
-
-  blocks:
-    extends: sections/blocks

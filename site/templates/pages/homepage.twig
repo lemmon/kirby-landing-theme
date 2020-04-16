@@ -5,7 +5,8 @@
 {% endblock %}
 
 {% block header %}
-{% with { hero: page.children().template('hero-content').first } %}
+{% with { blocks: page.find('hero').children().listed() } %}
+{% if blocks.count > 0 %}
 <div class="hero">
   <div class="hero__bg"></div>
   <div class="hero__content col max80 mx">
@@ -13,22 +14,29 @@
     <div>
       {{ parent() }}
     </div>
-    {% include partial('hero-content') %}
+    <div class="pb2">
+      <div class="md-py2">
+
+        {% for section in blocks %}
+        {% include partial(section.intendedTemplate) %}
+        {% endfor %}
+
+      </div>
+    </div>
 
   </div>
 </div>
+{% else %}
+{{ parent() }}
+{% endif %}
 {% endwith %}
 {% endblock %}
 
 {% block main %}
 <div class="py2 md-py4">
 
-  {% for section in page.children().notTemplate('hero-content') %}
-  <div class="py1 md-py2">
-
-    {% include partial(section.intendedTemplate) %}
-
-  </div>
+  {% for section in page.children().notTemplate('hero') %}
+  {% include partial(section.intendedTemplate) %}
   {% endfor %}
 
 </div>
