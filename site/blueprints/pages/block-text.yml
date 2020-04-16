@@ -23,6 +23,18 @@ columns:
             label: Text
             type: textarea
 
+          actions:
+            label: CTA
+            type: structure
+            fields:
+              label:
+                label: Label
+                type: text
+              link:
+                label: Link
+                type: text
+
+
   - width: 1/2
     sticky: true
     sections:
