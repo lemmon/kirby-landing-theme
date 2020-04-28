@@ -54,7 +54,7 @@
       </div>
       {% endif %}
       {% if section.actions.notEmpty %}
-      <div class="row justify-{{ ta == 'right' ? 'end' : ta == 'center' ? 'center' : 'start' }} p05">
+      <div class="sd-row flex-wrap justify-{{ ta == 'right' ? 'end' : ta == 'center' ? 'center' : 'start' }} p05">
         {% for action in section.actions.toStructure %}
         <div class="p05"><a class="button min12 ac p1" href="{{ page(action.link).url ?: action.link.value }}">
           <span class="button__label px05 fw500 lh4 color-white uc">{{ action.label }}</span>
