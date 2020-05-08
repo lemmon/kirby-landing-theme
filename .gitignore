@@ -1,4 +1,4 @@
-bin
+bin/deploy
 kirby
 media/*
 !media/.htaccess
