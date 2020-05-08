@@ -8,11 +8,11 @@ Tagline: Free Customizable Kirby Template
 
 Social:
 
--
+- 
   name: GitHub
   code: f09b
   url: https://github.com/lemmon/kirby-landing
--
+- 
   name: Twitter
   code: f099
   url: https://twitter.com/lemmon
@@ -20,3 +20,7 @@ Social:
 ----
 
 Footer: (c) (date: year) Built with (link: https://github.com/lemmon/kirby-landing-theme text: Landing Theme) by (link: https://twitter.com/lemmon text: Lemmon Juice)
+
+----
+
+Htmllang: en
