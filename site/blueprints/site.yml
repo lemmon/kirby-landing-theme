@@ -71,6 +71,18 @@ tabs:
                 type: text
                 help: &lt;html lang="{{site.htmlLang}}"&gt;
 
+              googleAnalytics:
+                label: Google Analytics
+                type: text
+                placeholder: UA-XXXXX-Y
+                width: 1/2
+
+              googleTagManager:
+                label: Google Tag Manager
+                type: text
+                placeholder: GTM-XXXX
+                width: 1/2
+
       - width: 1/4
         sections:
 

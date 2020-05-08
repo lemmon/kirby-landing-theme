@@ -24,3 +24,11 @@ Footer: (c) (date: year) Built with (link: https://github.com/lemmon/kirby-landi
 ----
 
 Htmllang: en
+
+----
+
+Googleanalytics: 
+
+----
+
+Googletagmanager: 
