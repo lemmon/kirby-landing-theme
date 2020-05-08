@@ -86,6 +86,21 @@ tabs:
       - width: 1/4
         sections:
 
+          logo:
+            type: files
+            template: logo
+            empty: No logo yet
+            max: 1
+            sortable: false
+            layout: cards
+            size: tiny
+            info: "{{ file.width }} x {{ file.height }}"
+            image:
+              ratio: 1/1
+              cover: false
+              back: white
+            width: 1/2
+
           favicon:
             type: files
             template: favicon

@@ -43,9 +43,25 @@
     <div class="max80 mx">
       <div class="py1 sd-p1 sd-row ld-row justify-between items-center flex-wrap">
         <div class="order0 row justify-between span1 span-auto">
+          {% with { logo: site.images.filterBy('template', 'logo').first } %}
+          {% if logo %}
+          <figure class="p1"><a
+            class="block maxw ha"
+            href="{{ kirby.url }}"
+            style="width: {{ logo.width }}px;"
+          ><img
+            class="block w100 ha"
+            src="{{ logo.url }}"
+            width="{{ logo.width }}"
+            height="{{ logo.height }}"
+            alt="{{ site.title }}"
+          ></a></figure>
+          {% else %}
           <h1><a class="block p1 fw900" style="font-size: 1.75rem;" href="{{ page('home').url }}">
             {{- site.title -}}
           </a></h1>
+          {% endif %}
+          {% endwith %}
         </div>
         <nav class="order1 span1 span-auto hide sd-show">
           <ul class="px025 row justify-end ac">
