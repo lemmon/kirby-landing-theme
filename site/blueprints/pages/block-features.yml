@@ -1,0 +1,69 @@
+title: Features Block
+
+columns:
+
+  - width: 1/2
+    sections:
+
+      content:
+        type: fields
+        fields:
+
+          text:
+            label: Text
+            type: textarea
+
+          features:
+            label: Features
+            type: structure
+            columns:
+              text:
+            fields:
+              text:
+                label: Text
+                type: textarea
+                buttons: false
+              icon:
+                label: Icon
+                type: files
+                max: 1
+                image:
+                  cover: false
+
+  - width: 1/2
+    sticky: true
+    sections:
+
+      sidebar:
+        type: fields
+        fields:
+
+          textPosition:
+            label: Text Position
+            type: select
+            placeholder: above
+            options:
+              - left
+              - right
+            width: 1/2
+
+          textSize:
+            label: Text Size
+            type: select
+            placeholder: normal
+            options:
+              - bigger
+            width: 1/2
+
+          iconPosition:
+            label: Icon Position
+            type: select
+            placeholder: auto
+            options:
+              - above
+            width: 1/2
+
+      files:
+        headline: Files
+        type: files
+        sortable: false

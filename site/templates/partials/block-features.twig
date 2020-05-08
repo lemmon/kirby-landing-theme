@@ -1,0 +1,52 @@
+{% with {
+  tp: section.textPosition.value,
+  ts: section.textSize.value,
+  ip: section.iconPosition.value,
+} %}
+<section class="py1 md-py2">
+  <div class="py1 sd-px1 max80 mx">
+
+    <div class="
+      {%- if tp %} ld-row{% if tp == 'right' %}-reverse{% endif %}{% endif -%}
+    ">
+
+      <div class="span1">
+        <div class="max42 mx
+          ac {%- if tp %} ld-al ld-row{% endif -%}
+        ">
+          <div class="p1 copy lh4
+            {%- if ts == 'bigger' %} h5{% endif %}
+          ">
+            {{ section.text.kt({ width: 640, srcset: [ 320, 640, 960, 1280 ] }) | raw }}
+          </div>
+          <div class="p05"></div>
+        </div>
+      </div>
+
+      <div class="span2">
+        <div class="x-grid">
+          {% for item in section.features.toStructure %}
+          <article class="p05 {%- if not ip %} row flex-wrap{% endif %}">
+            {% if item.icon.notEmpty %}
+            <figure class="p05">
+              <img class="block" src="{{ item.icon.toFile.url }}" alt="">
+            </figure>
+            {% endif %}
+            {% if item.text.notEmpty %}
+            <div class="row span1 min18">
+              <div class="p05 span1 copy lh4">
+                {{ item.text.kt | raw }}
+              </div>
+              <div class="p05 xs-hide"></div>
+            </div>
+            {% endif %}
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+{% endwith %}

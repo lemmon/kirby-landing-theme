@@ -1,0 +1,68 @@
+Title: Features I
+
+----
+
+Text:
+
+## Donec Luctus Quam
+
+Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+
+----
+
+Features:
+
+- 
+  text: |
+    ### Sed Acelerisque Nec
+    
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+  icon:
+    - icon.svg
+  image:
+    - icon.svg
+  title: ""
+- 
+  text: |
+    ### Sed Acelerisque Nec
+    
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+  icon:
+    - icon.svg
+  image:
+    - icon.svg
+  title: Sed Acelerisque Nec
+- 
+  text: |
+    ### Sed Acelerisque Nec
+    
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+  icon:
+    - icon.svg
+  image:
+    - icon.svg
+  title: Sed Acelerisque Nec
+
+----
+
+Textposition: left
+
+----
+
+Textsize: 
+
+----
+
+Iconposition: 
+
+----
+
+Textalign: 
+
+----
+
+Figure: 
+
+----
+
+Figureposition: 
