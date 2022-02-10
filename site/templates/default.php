@@ -1,3 +1,3 @@
 <?php
 
-twig(page()->intendedTemplate()->name(), $kirby->data);
+go(sprintf('%s/#%s', $site->url(), $page->getAnchor()));

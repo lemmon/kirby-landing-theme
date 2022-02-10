@@ -7,7 +7,7 @@
 {% block header %}
 {% with { blocks: page.find('hero').children().listed() } %}
 {% if blocks.count > 0 %}
-<div class="hero">
+<div id="hero" class="hero">
   <div class="hero__bg"></div>
   <div class="hero__content col max80 mx">
 

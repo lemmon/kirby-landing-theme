@@ -18,10 +18,14 @@ Actions:
 
 - 
   label: Sign up
-  link: bar
+  link:
+    type: page
+    value: home/text-i
 - 
   label: Learn More
-  link: foo
+  link:
+    type: email
+    value: hello@example.com
 
 ----
 

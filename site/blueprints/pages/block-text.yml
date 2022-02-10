@@ -32,7 +32,9 @@ columns:
                 type: text
               link:
                 label: Link
-                type: text
+                type: link
+                pages:
+                  query: site.index.listed
 
 
   - width: 1/2

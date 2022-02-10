@@ -8,6 +8,7 @@ site/cache/*
 !site/cache/index.html
 site/sessions/*
 !site/sessions/index.html
+site/plugins/link-field
 node_modules
 vendor
 composer.lock
