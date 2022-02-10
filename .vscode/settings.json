@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": false,
+  "files.exclude": {
+    "**/*.lock": true,
+    "node_modules": true,
+    "kirby": true,
+    "media/*[!.htaccess]**": true,
+    "site/accounts": true,
+    "site/cache": true,
+    "site/sessions": true,
+    "vendor": true
+  },
+  "files.trimFinalNewlines": true,
+  "search.exclude": {
+    "static/master.*": true
+  }
+}
