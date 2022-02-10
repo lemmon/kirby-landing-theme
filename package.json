@@ -4,7 +4,7 @@
   },
   "scripts": {
     "w": "npm run build:css -- --watch",
-    "build:css": "abrusco src/css -o static/master.css",
+    "build:css": "abrusco src/css --minify -o static/master.css",
     "build": "npm run build:css"
   }
 }
